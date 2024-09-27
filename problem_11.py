@@ -7,7 +7,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn import linear_model
 
-
 # retrieve the data from csv file
 df = pd.read_csv("./datasets/Auto.csv", delimiter=",")
 x = df[['cylinders','displacement','horsepower','weight','acceleration','year']]
@@ -29,13 +28,16 @@ for alp in alphas:
 
 # print the highest r2 value and its alpha
 max_index = np.argmax(r2values_ridge)
-print(r2values_ridge[max_index], alphas[max_index])
+print("Ridge R2: " + str(r2values_ridge[max_index]) + " Alpha: " + str(alphas[max_index]))
 
+plt.title("Ridge Regression")
+plt.xlabel("Alpha")
+plt.ylabel("R2 value")
 plt.plot(alphas,r2values_ridge)
 plt.show()
 
 # lasso regression
-alphas = np.linspace(0,1,1000)
+alphas = np.logspace(-2, 0, 1000)  # alpha range from 0.01 to 1
 r2values_lasso = []
 
 for alp in alphas:
@@ -46,8 +48,11 @@ for alp in alphas:
 
 # print the highest r2 value and its alpha value
 max_index = np.argmax(r2values_lasso)
-print(r2values_lasso[max_index], alphas[max_index])
+print("Lasso R2: " + str(r2values_lasso[max_index]) + " Alpha: " + str(alphas[max_index]))
 
+plt.title("Lasso Regression")
+plt.xlabel("Alpha")
+plt.ylabel("R2 value")
 plt.plot(alphas,r2values_lasso)
 plt.show()
 
