@@ -3,9 +3,8 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 from sklearn.model_selection import train_test_split
-import seaborn as sns
 
-data = pd.read_csv("./datasets/exams.csv", skiprows=0, delimiter=",")
+data = pd.read_csv("../datasets/exams.csv", skiprows=0, delimiter=",")
 
 x = data.iloc[:, 0:2]
 y = data.iloc[:, -1]

@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import classification_report
 
-df = pd.read_csv("./datasets/iris.csv")
+df = pd.read_csv("../datasets/iris.csv")
 
 X = df.iloc[:, 0:4].values
 y = df.iloc[:, 4].values

@@ -7,7 +7,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, accuracy_score
 
 # retrieve data from csv
-df = pd.read_csv("./datasets/bank.csv", delimiter=';')
+df = pd.read_csv("../datasets/bank.csv", delimiter=';')
 
 # create dataframe with desired variables
 df2 = df[['y', 'job', 'marital', 'default', 'housing', 'poutcome']]

@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data = pd.read_csv("./datasets/quadreg_data.csv", skiprows=0, names=["x", "y"])
+data = pd.read_csv("../datasets/quadreg_data.csv", skiprows=0, names=["x", "y"])
 xpd = np.array(data[["x"]])
 ypd = np.array(data[["y"]])
 

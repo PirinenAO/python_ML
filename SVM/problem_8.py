@@ -4,7 +4,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import classification_report, confusion_matrix
 
 # 0) Read data into a pandas dataframe.
-df = pd.read_csv("./datasets/data_banknote_authentication.csv")
+df = pd.read_csv("../datasets/data_banknote_authentication.csv")
 
 # 1) Pick the column named "class" as target variable y and all other columns as feature variables X.
 x = df.drop('class', axis=1)

@@ -1,11 +1,10 @@
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
-import numpy as np
 from sklearn import svm
 from sklearn.metrics import confusion_matrix, classification_report
 
-df = pd.read_csv("./datasets/emails.csv")
+df = pd.read_csv("../datasets/emails.csv")
 
 X = df["text"]
 y = df["spam"]

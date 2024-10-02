@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 
-data = pd.read_csv("./datasets/quadreg_data.csv",skiprows=0,names=["x","y"])
+data = pd.read_csv("../datasets/quadreg_data.csv",skiprows=0,names=["x","y"])
 xpd = np.array(data[["x"]])
 ypd = np.array(data[["y"]])
 xpd = xpd.reshape(-1,1)

@@ -3,12 +3,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.linear_model import Ridge
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn import linear_model
 
 # retrieve the data from csv file
-df = pd.read_csv("./datasets/Auto.csv", delimiter=",")
+df = pd.read_csv("../datasets/Auto.csv", delimiter=",")
 x = df[['cylinders','displacement','horsepower','weight','acceleration','year']]
 y = df['mpg']
 

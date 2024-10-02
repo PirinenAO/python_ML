@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('./datasets/diamonds.csv')
+df = pd.read_csv('../datasets/diamonds.csv')
 
 X = df[['carat', 'depth', 'table', 'x', 'y', 'z']]
 y = df[['price']]

@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 import pandas as pd
 
-df = pd.read_csv("./datasets/ridgereg_data.csv")
+df = pd.read_csv("../datasets/ridgereg_data.csv")
 x = df[['x']]
 y = df[['y']]
 

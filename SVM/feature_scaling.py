@@ -3,7 +3,7 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('./datasets/weight-height.csv',skiprows=0,delimiter=",")
+df = pd.read_csv('../datasets/weight-height.csv',skiprows=0,delimiter=",")
 
 X = 2.54*df[['Height']]
 X_mm = MinMaxScaler().fit_transform(X)

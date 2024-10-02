@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # READ DATA FROM CSV FILE
-data = pd.read_csv("./datasets/linreg_data.csv", skiprows=0, names=["x", "y"])
+data = pd.read_csv("../datasets/linreg_data.csv", skiprows=0, names=["x", "y"])
 xpd = data["x"]
 ypd = data["y"]
 

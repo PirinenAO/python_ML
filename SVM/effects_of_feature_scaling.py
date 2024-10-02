@@ -5,7 +5,7 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('./datasets/Admission_Predict.csv',skiprows=0,delimiter=",")
+df = pd.read_csv('../datasets/Admission_Predict.csv',skiprows=0,delimiter=",")
 
 X = df[["CGPA",'GRE Score']]
 y = df[["Chance of Admit "]]

@@ -4,7 +4,7 @@ from sklearn import metrics
 import matplotlib.pyplot as plt
 
 # READING DATA AND CONVERTING TO MATRICES
-data = np.genfromtxt("./datasets/linreg_data.csv", delimiter=",")
+data = np.genfromtxt("../datasets/linreg_data.csv", delimiter=",")
 xp = data[:,0]
 yp = data[:,1]
 xp = xp.reshape(-1,1)

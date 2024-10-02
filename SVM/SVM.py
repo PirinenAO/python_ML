@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report, confusion_matrix
 
-df2 = pd.read_csv("./datasets/iris.csv")
+df2 = pd.read_csv("../datasets/iris.csv")
 
 x = df2.drop('species', axis=1)
 y = df2['species']

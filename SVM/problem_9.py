@@ -5,7 +5,7 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.metrics import r2_score
 
 # 0) Read data into a pandas dataframe.
-df = pd.read_csv("./datasets/weight-height.csv")
+df = pd.read_csv("../datasets/weight-height.csv")
 
 # 1) Pick the target variable y as weight in kilograms, and the feature variable X as height in centimeters.
 y = df['Weight']

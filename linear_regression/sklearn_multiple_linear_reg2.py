@@ -1,12 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
-df = pd.read_csv("./datasets/winequality-white.csv", delimiter=";")
+df = pd.read_csv("../datasets/winequality-white.csv", delimiter=";")
 
 plt.subplot(1,2,1)
 plt.scatter(df['residual sugar'],df['density'])

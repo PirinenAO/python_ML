@@ -24,7 +24,7 @@ from sklearn import metrics
 import matplotlib.pyplot as plt
 
 # retrieve data from file
-data = np.genfromtxt("./datasets/weight-height.csv", delimiter=",", skip_header=1)
+data = np.genfromtxt("../datasets/weight-height.csv", delimiter=",", skip_header=1)
 # parse the data to variables and reshape them into 1x1 matrices
 x = data[:,1]
 y = data[:,2]
