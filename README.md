@@ -1,2 +1,2 @@
 ## Artificial Intelligence with python 3 ects
-Course exerices and datasets
+Course exercises and datasets from metropolia UAS AI/ML course
